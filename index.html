@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR - iOS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('selectstart', e => e.preventDefault());
+
+    function secureDownload(id) {
+      const links = {
+        "delta": "itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall21.plist",
+        "Krnl": "itms-services://?action=download-manifest&url=https://krnl-ios.com/Install2.plist",
+        "Skipx": "itms-services://?action=download-manifest&url=https://skibx.com/ota.plist",
+        "Codex": "itms-services://?action=download-manifest&url=https%3A%2F%2Fcodex-ios.com%2FInstall.plist"
+      };
+
+      const url = links[id];
+      if (url) {
+        window.location.href = url;
+      } else {
+        alert("رابط التحميل غير متاح حالياً");
+      }
+    }
+  </script>
+</head>
+<body>
+
+<header>AR - iOS</header>
+
+<main>
+  <h2><i class="fa-brands fa-apple"></i> افضل هاكات روبلوكس للايفون</h2>
+  <p>نضع المتاح للتحميل.</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://i.postimg.cc/JhrQQYV2/E367-C7-D2-4750-4524-ADD5-B9-A8-DA953734.png">
+      <div class="card-body">
+        <h3>Delta</h3>
+        <button class="download-btn" onclick="secureDownload('delta')">
+          <i class="fa-solid fa-download"></i> تحميل
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="codex.png">
+      <div class="card-body">
+        <h3>Codex</h3>
+        <button class="download-btn" onclick="secureDownload('Codex')">
+          <i class="fa-solid fa-download"></i> تحميل
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.postimg.cc/Qtd17DBr/7-D0-FD78-F-186-C-4-C0-A-A335-74-BD7-EF9-BDBB.png">
+      <div class="card-body">
+        <h3>Krnl</h3>
+        <button class="download-btn" onclick="secureDownload('Krnl')">
+          <i class="fa-solid fa-download"></i> تحميل
+        </button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="https://i.postimg.cc/3xNZTSKc/IMG-2739.jpg">
+      <div class="card-body">
+        <h3>Skipx</h3>
+        <button class="download-btn" onclick="secureDownload('Skipx')">
+          <i class="fa-solid fa-download"></i> تحميل
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>© 2025 AR</footer>
+
+<nav>
+  <a href="index.html" class="tab active"><i class="fa-brands fa-apple"></i><span>iOS</span></a>
+  <a href="pc.html" class="tab"><i class="fa-solid fa-desktop"></i><span>PC</span></a>
+  <a href="android.html" class="tab"><i class="fa-brands fa-android"></i><span>Android</span></a>
+</nav>
+
+</body>
+</html>
